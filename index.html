@@ -12,6 +12,9 @@
     <!-- MATERIAL SYMBOLS -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" >
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
     <!-- Meta tags mejorados para SEO: agregué robots y canonical para mejor indexación -->
     <meta name="description" content="Descubre experiencias de viaje de lujo con EliteTravel. Encuentra vuelos, hoteles y tours exclusivos para tu próxima aventura.">
     <meta name="keywords" content="viajes de lujo, agencia de viajes, destinos exóticos, paquetes turísticos, cruceros">
@@ -20,8 +23,8 @@
     <link rel="canonical" href="https://www.elitetravel.com">
     <meta property="og:title" content="EliteTravel | Agencia de viajes">
     <meta property="og:description" content="Encuentra los mejores vuelos, hoteles y tours para tu próxima escapada de lujo.">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=EliteTravel+Logo"> <!-- Placeholder; reemplaza con URL real -->
-    <meta property="og:url" content="https://www.elitetravel.com"> <!-- Reemplaza con URL real -->
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=EliteTravel+Logo">
+    <meta property="og:url" content="/assets/favicon.ico"> <!-- Reemplaza con URL real -->
     <meta property="og:type" content="website">
 
     <!-- Schema Markup mejorado: agregué más detalles como dirección y logo para SEO estructurado -->
@@ -31,7 +34,7 @@
         "@type": "Organization",
         "name": "EliteTravel",
         "url": "https://www.elitetravel.com",
-        "logo": "https://via.placeholder.com/150x50?text=Logo", <!-- Agregado logo para Schema -->
+        "logo": "/assets/favicon.ico", <!-- Agregado logo para Schema -->
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+51-931-876-231",
@@ -56,7 +59,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo de EliteTravel">
+            <img src="/assets/favicon.ico" alt="Logo de EliteTravel" width="100px">
             <h1>EliteTravel</h1>
         </div>
         <nav aria-label="Menú principal">
@@ -73,20 +76,21 @@
 
     <main>
         <section id="section-hero">
-            <h2>Descubre tu próxima <br><em>experiencia</em><br> de obra maestra</h2>   
-            <p>Encuentra los mejores vuelos, hoteles y tours para tu próxima escapada de lujo.</p>
-            <form role="search">
-                <label for="destino">Destino</label>
-                <input type="text" name="destino" id="destino" placeholder="¿Cuál es tu destino?" autocomplete="off" required>
-                
-                <label for="fecha-ida">Fecha de ida</label>
-                <input type="date" name="fecha-ida" id="fecha-ida" autocomplete="off" required>
-                
-                <label for="fecha-vuelta">Fecha de vuelta</label>
-                <input type="date" name="fecha-vuelta" id="fecha-vuelta" autocomplete="off" required>
-                
-                <button type="submit" aria-label="Buscar destinos">Buscar</button>
-            </form>
+            <div class="hero-image"></div>
+            <div class="hero-gradient"></div>
+            <div class="hero-content">
+                <h2>Descubre tu próxima <br><span>experiencia</span><br> de obra maestra</h2>   
+                <p>Encuentra los mejores vuelos, hoteles y tours para tu próxima escapada de lujo.</p>
+                <form role="search">
+                    <label for="destino" class="sr-only">Destino</label>
+                    <input type="text" name="destino" id="destino" placeholder="¿Cuál es tu destino?" autocomplete="off" required>
+                    
+                    <label for="fecha-ida" class="sr-only">Fecha de ida</label>
+                    <input type="text" name="fecha-ida" id="fecha-ida" placeholder="Fecha Ida" onfocus="this.type='date'" onblur="this.type='text'" autocomplete="off" required>
+    
+                    <button type="submit" aria-label="Buscar destinos">Buscar</button>
+                </form>
+            </div>
         </section>
 
         <section id="section-valorate">
@@ -203,7 +207,7 @@
         <div>
             <div class="info-footer">
                 <div>
-                    <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo de EliteTravel">
+                    <img src="/assets/favicon.ico" alt="Logo de EliteTravel">
                     <h4>EliteTravel</h4>
                 </div>
                 <p>Creando experiencias de lujo de clase mundial desde 2008. Tu viaje hacia lo extraordinario comienza con un solo paso.</p>
