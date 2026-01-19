@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -97,22 +100,22 @@
             <div class="info">
                 <div class="titles">
                     <h3>MEJOR VALORADO</h3>
-                    <h2>Destinos en Tendencia</h2>
+                    <h2><strong>Destinos en Tendencia</strong></h2>
                 </div>
-                <button aria-label="Ver todos los destinos">Ver Todo</button>
+                <a href="#"><span class="link-text">Ver Todo</span><span class="material-symbols-outlined">chevron_right</span></a>
             </div>
             <div class="card-grid-valorate">
                 
                 <div class="card-valorate">
                     <div class="top">
-                        <img src="https://via.placeholder.com/300x200?text=Maldivas" alt="Imagen de villa de lujo en las Maldivas"> 
-                        <span class="valoracion">4.9</span> 
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnkdMgHVgkTv7ndHBgcjQCXiK6mrqtDD-ijlfVGaTH0QMXMP92hfenPTiu8kdRLvWZ8fHf_TzdZ80up1HxgnSPoetUof6QIzaNArU1RrD2MWRFB472K12mhRHnIgldh0L6i0v2dK_lo4GW_-Mp0UBhrdk7mryh6qN5zqAS4W8DcwHpGqbSwHkTVNg688x20Glz-esrKDwrg8K24zNOMcxMUbneudiP0DZtem-SuHJVUrWVCOFxwYpTKYocfZr0PIoDqLpetlz0GA" alt="Imagen de villa de lujo en las Maldivas"> 
+                        <div class="valoracion"><span class="material-symbols-outlined">star</span><span>4.9</span></div> 
                     </div>
                     <div class="buttom">
                         <h3>Retiro de lujo en las Maldivas</h3>
                         <div>
                             <h4>Villa en Isla Privada</h4>
-                            <span>$1,200</span>
+                            <span>Desde $1,200</span>
                         </div>
                     </div>
                 </div>
@@ -149,23 +152,23 @@
 
         <section id="section-about">
             <h2>Porque Viajar con Nosotros</h2>
-            <p>Ofrecemos experiencias de lujo incomparables con un enfoque en la seguridad, la comodidad y la exclusividad.</p>
+            <p>Ofrecemos experiencias de lujo incomparables con un enfoque en la seguridad, la comodidad <br>y la exclusividad.</p>
             <div class="card-grid-about">
                 
                 <div class="card-about">
-                    <img src="https://via.placeholder.com/200x150?text=Soporte" alt="Imagen representando soporte 24/7">
+                    <span class="material-symbols-outlined icono">support_agent</span>
                     <h3>Soporte de consejería 24/7</h3>
                     <p>Nuestros expertos en viajes están disponibles las 24 horas para garantizar que su viaje sea perfecto y sin estrés</p>
                 </div>
-                
+
                 <div class="card-about">
-                    <img src="https://via.placeholder.com/200x150?text=Personalizado" alt="Imagen de experiencia personalizada">
+                    <span class="material-symbols-outlined icono">verified</span>
                     <h3>Experiencias Personalizadas</h3>
                     <p>Diseñamos itinerarios a medida según tus preferencias, asegurando un viaje único y memorable.</p>
                 </div>
 
                 <div class="card-about">
-                    <img src="https://via.placeholder.com/200x150?text=Seguridad" alt="Imagen representando seguridad">
+                    <span class="material-symbols-outlined icono">auto_awesome</span>
                     <h3>Seguridad Garantizada</h3>
                     <p>Viaja con tranquilidad gracias a nuestros protocolos de seguridad y seguros integrales.</p>
                 </div>
@@ -173,18 +176,28 @@
         </section>
 
         <section id="section-offers">
-            <h2>Ofertas Especiales por Tiempo Limitado</h2>
+            <div>
+                <h2>Ofertas Especiales por Tiempo Limitado</h2>
+                <div class="buttons">
+                    <div class="left">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </div>
+                    <div class="right">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </div>
+                </div>
+            </div>
             <div class="card-grid-offers">
 
                 <div class="card-offers">
                     <div>
-                        <img src="https://via.placeholder.com/400x250?text=Oferta+Grecia" alt="Imagen de yate en las islas griegas"> 
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdHjo8svml__c_STbvrwthZVi6S4_uAfK4V0cfU5C1SLE1T9dQ8lZuP3YC3F6zdfEiUmIqaQSKfTZJnqoaWDNGe6g6BZSE1ohmIDmxrZDT43KrBJHOhW36hzXiYRPSPiR6eEayDmMlvLs9UHptFrPzBpSzntE3iHm-Gf1J1_bjwiDOsVpgVNfYu6vowxL5ecU2DwGmzWVRIRUb_7FNah8lntHKkSAfDvtRcbFHJ7WEbPO-a8mgV9siO6W6TnJOLQJrlOvG32miiA" alt="Imagen de yate en las islas griegas"> 
                     </div>
                     <div class="info-oferta">
-                        <span>20% DE DESCUENTO EN PAQUETES</span>
+                        <div><span>20% DE DESCUENTO EN PAQUETES</span></div>
                         <h3>Experiencia de navegación por las islas griegas</h3>
                         <p>7 Noches de tour en yate de lujo con todo incluido por Santorini y Mykonos.</p>
-                        <button aria-label="Reservar oferta de Grecia">RESERVAR AHORA</button>
+                        <a href="#"><span class="texto">RESERVAR AHORA</span><span class="material-symbols-outlined">arrow_forward</span></a>
                     </div>
                 </div>
 
@@ -193,28 +206,31 @@
                         <img src="https://via.placeholder.com/400x250?text=Oferta+Caribe" alt="Imagen de playa en el Caribe">
                     </div>
                     <div class="info-oferta">
-                        <span>15% DE DESCUENTO EN HOTELES</span>
+                        <div><span>15% DE DESCUENTO EN HOTELES</span></div>
                         <h3>Relajación total en el Caribe</h3>
                         <p>5 Noches en resort all-inclusive con spa y actividades acuáticas en Punta Cana.</p>
-                        <button aria-label="Reservar oferta del Caribe">RESERVAR AHORA</button>
+                        <a href="#"><span class="texto">RESERVAR AHORA</span><span class="material-symbols-outlined">arrow_forward</span></a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    
+    <hr>
 
     <footer>
         <div>
             <div class="info-footer">
                 <div>
-                    <img src="/assets/favicon.ico" alt="Logo de EliteTravel">
-                    <h4>EliteTravel</h4>
+                    <img src="/assets/favicon.ico" alt="Logo de EliteTravel" width="80px">
+                    <h3>EliteTravel</h3>
                 </div>
                 <p>Creando experiencias de lujo de clase mundial desde 2008. Tu viaje hacia lo extraordinario comienza con un solo paso.</p>
                 <div class="icons">
-                    <a href="#" aria-label="Visítanos en Facebook"><span class="material-symbols-outlined">facebook</span></a>
-                    <a href="#" aria-label="Visítanos en Instagram"><span class="material-symbols-outlined">camera_alt</span></a>
+
+                    <a href="#" aria-label="Visítanos en Facebook"><span class="material-symbols-outlined">public</span></a>
                     <a href="#" aria-label="Visítanos en Twitter"><span class="material-symbols-outlined">share</span></a>
+                    <a href="#" aria-label="Visítanos en Instagram"><span class="material-symbols-outlined">camera</span></a>
                 </div>
             </div>
             <div class="links-web">
@@ -229,19 +245,21 @@
             </div>
             <address>
                 <p><strong>Contactos</strong></p>
-                <p>Av. 3 de Octubre, Comas, Lima, Perú</p>
-                <a href="tel:+51931876231">+51 931-876-231</a>
-                <a href="mailto:fabryzziof@gmail.com">fabryzziof@gmail.com</a>
+                <p><span class="material-symbols-outlined">location_on</span>Av. 3 de Octubre, Comas, Lima, Perú</p>
+                <a href="tel:+51931876231"><span class="material-symbols-outlined">phone</span>+51 931-876-231</a>
+                <a href="mailto:fabryzziof@gmail.com"><span class="material-symbols-outlined">mail</span>fabryzziof@gmail.com</a>
             </address>
             <div class="information">
                 <h4>Más Información</h4>
                 <p>Únase a nuestro círculo íntimo para obtener ofertas de viajes exclusivos y actualizaciones.</p>
-                <label for="email">Tu correo electrónico</label>
-                <input type="email" name="email" id="email" placeholder="Tu correo electrónico" autocomplete="email" required> 
-                <button aria-label="Suscribirse al newsletter">Suscríbete</button>
+                <div>
+                    <label for="email" class="sr-only">Tu correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="Tu correo electrónico" autocomplete="email" required> 
+                    <button aria-label="Suscribirse al newsletter">Suscríbete</button>
+                </div>
             </div>
         </div>
-        <hr>
+        <hr class="hr-footer">
         <div>
             <p>&copy; 2024 EliteTravel Inc. Todos los derechos reservados.</p> 
             <div class="links-footer">
