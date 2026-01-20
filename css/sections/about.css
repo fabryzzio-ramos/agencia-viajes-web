@@ -1,0 +1,22 @@
+#section-about {
+    background-color: var(--navy-deep);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+#section-about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#section-about > p {
+    margin: 0 auto;
+    color: #798698;
+}
+.card-grid-about {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    justify-items: center;
+}

@@ -1,0 +1,42 @@
+#section-offers {
+    padding: 70px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#section-offers h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+#section-offers > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 2px solid #c4c9d1;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.buttons div:hover{
+    transform: scale(1.15);
+}
+.buttons div span {
+    font-size: 1.5em;
+}
+.card-grid-offers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}

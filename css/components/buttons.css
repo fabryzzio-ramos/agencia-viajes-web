@@ -1,0 +1,53 @@
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* HOME PAGE */
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    margin: auto 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+}
+.btn-primary:hover {
+    background-color: #3182ce;
+    box-shadow: 2px 5px 10px #2b8cee;
+}
+
+.btn-hero {
+    background-color: var(--primary);
+    color: white;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.btn-hero:hover {
+    background-color: #2563eb;
+}
+
+.btn-hero::before {
+    content: 'search';
+    font-family: 'Material Symbols Outlined';
+    font-variation-settings: 'FILL' 0, 'wght' 400;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* DESTINOS PAGE */

@@ -1,0 +1,133 @@
+footer{
+    padding: 100px 20px 30px;
+}
+
+/* PRIMERA PARTE FOOTER */
+footer > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #798698;
+    gap: 40px;
+}
+footer > div h4, footer > div address p:first-child{
+    color: black;
+    font-style: normal;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.info-footer > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    color: black;
+    position: relative;
+}
+.info-footer > div img{
+    position: absolute;
+    top: -25px;
+    left: -5px;
+}
+.info-footer > div h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 80px;
+}
+.info-footer .icons {
+    margin-top: 30px
+}
+.info-footer .icons a{
+    border-radius: 100%;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: black;
+    font-variation-settings: 'FILL' 1;
+    transition: transform 0.3s ease;
+}
+.info-footer .icons a:hover {
+    transform: scale(1.2) translateY(-5px);
+}
+.links-web ul{
+    list-style: none;
+}
+.links-web li {
+    margin-bottom: 15px;
+}
+.links-web a{
+    color: #798698;
+    text-decoration: none;
+}
+address{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+address span {
+    color: var(--primary);
+    font-variation-settings: 'FILL' 1;
+}
+address p {
+    display: flex;
+    gap: 10px;
+    font-style: normal;
+}
+address a{
+    text-decoration: none;
+    color: #798698;
+    display: flex;
+    gap: 10px;
+    font-style: normal;
+}
+.information p{
+    margin-bottom: 20px;
+}
+.information div{
+    display: flex;
+    flex-direction: column;
+}
+.information input {
+    padding: 10px 15px;
+    border: 1px solid #C6D1D9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.information input::placeholder{
+    font-size: 1.2em;
+    color: #798698;
+}
+.information button {
+    background-color: var(--navy-deep);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hr-footer{
+    margin: 70px auto;
+}
+/* SEGUNDA PARTE FOOTER */
+footer > div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+.links-footer {
+    display: flex;
+    gap: 30px;
+}
+.links-footer a{
+    color: #798698;
+    text-decoration: none;
+}

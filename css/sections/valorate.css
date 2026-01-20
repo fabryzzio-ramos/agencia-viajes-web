@@ -1,0 +1,39 @@
+#section-valorate {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.info .titles {
+    line-height: 2em;
+}
+.info .titles h3 {
+    font-size: 0.8em;
+    letter-spacing: 0.07em;
+    color: var(--primary);
+}
+.info .titles h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.info a {
+    color: var(--primary);
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    gap: 1px;
+}
+.info a:hover .link-text {
+    text-decoration: underline;
+}
+.card-grid-valorate {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}

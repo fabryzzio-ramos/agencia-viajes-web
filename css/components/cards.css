@@ -1,0 +1,184 @@
+
+/* CARD VALORATE */
+.card-valorate{
+    padding: 5px;
+}
+.card-valorate .top {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    min-height: 200px;
+    max-height: 300px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+.card-valorate .top:hover {
+    transform: scale(1.02);
+    transform-origin: center;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.4);
+}
+.card-valorate .top img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-valorate .top .valoracion {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    font-size: 0.85em; 
+    font-weight: bold;
+    gap: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+.card-valorate .top .valoracion span:nth-child(1) {
+    font-size: 1.4em; 
+    color: var(--accent-gold); 
+    font-variation-settings: 'FILL' 1;
+}
+
+.card-valorate .top .valoracion span:nth-child(2) {
+    color: #333; 
+}
+.card-valorate .buttom {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.card-valorate .buttom h3{
+    font-size: 1.2em;
+}
+.card-valorate .buttom div{
+    display: flex;
+    justify-content: space-between;
+}
+.card-valorate .buttom h4 {
+    font-size: 0.95em;
+    color: rgb(113, 114, 128);
+}
+.card-valorate .buttom span {
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 1.1em;
+}
+
+/* CARD ABOUT */
+.card-about {
+    min-width: 200px;
+    max-width: 500px;
+    padding: 0 50px;
+    position: relative;
+}
+.card-about:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: 1px;
+    height: 100%; 
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1; 
+}
+.card-about .icono {
+    background-color: #132C45;
+    color: #2B8CEE;
+    padding: 15px;
+    font-size: 2.5rem;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-variation-settings: 'FILL' 1;
+}
+.card-about h3{
+    margin-bottom: 20px;
+}
+.card-about p {
+    color: #798698;
+    line-height: 1.5em;
+}
+
+/* CARD OFFERS */
+.card-offers {
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+    height: 300px;
+}
+.card-offers:hover {
+    transform: scale(1.02);
+    transform-origin: center;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.4);
+}
+.card-offers > div:first-child {
+    position: relative;
+    flex: 0 0 300px;
+    height: 300px;
+}
+.card-offers img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-offers .info-oferta {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.card-offers .info-oferta > div {
+    background-color: #F6EFD7;
+    color: #af953d;
+    padding: 4px 5px;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+.card-offers .info-oferta > div span {
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+}
+.card-offers .info-oferta h3 {
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1em;
+    margin: 0;
+}
+.card-offers .info-oferta p{
+    color: #798698;
+    line-height: 1.1em;
+    font-size: 0.95em;
+    margin: 0;
+}
+.card-offers .info-oferta a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    align-self: flex-start;
+}
+.card-offers .info-oferta a .texto:hover{
+    text-decoration: underline;
+}

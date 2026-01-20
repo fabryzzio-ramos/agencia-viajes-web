@@ -16,7 +16,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" >
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/base.css">
+
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+
+    <link rel="stylesheet" href="css/sections/hero.css">
+    <link rel="stylesheet" href="css/sections/valorate.css">
+    <link rel="stylesheet" href="css/sections/about.css">
+    <link rel="stylesheet" href="css/sections/offers.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Meta tags mejorados para SEO: agregué robots y canonical para mejor indexación -->
     <meta name="description" content="Descubre experiencias de viaje de lujo con EliteTravel. Encuentra vuelos, hoteles y tours exclusivos para tu próxima aventura.">
@@ -67,14 +82,14 @@
         </div>
         <nav aria-label="Menú principal">
             <ul>
-                <li><a href="#section-valorate">Destinos</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
                 <li><a href="#section-about">Paquetes</a></li>
                 <li><a href="#section-offers">Cruceros</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <button aria-label="Reservar ahora">Reserva Ahora</button>
+        <button aria-label="Reservar ahora" class="btn-primary">Reserva Ahora</button>
     </header>
 
     <main>
@@ -91,7 +106,7 @@
                     <label for="fecha-ida" class="sr-only">Fecha de ida</label>
                     <input type="text" name="fecha-ida" id="fecha-ida" placeholder="Fecha Ida" onfocus="this.type='date'" onblur="this.type='text'" autocomplete="off" required>
     
-                    <button type="submit" aria-label="Buscar destinos">Buscar</button>
+                    <button type="submit" aria-label="Buscar destinos" class="btn-hero">Buscar</button>
                 </form>
             </div>
         </section>
