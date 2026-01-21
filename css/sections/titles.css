@@ -1,0 +1,32 @@
+main {
+    padding: 0 20px;
+}
+#section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#titles p {
+    color: #6284A6;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+#titles > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#titles > div button {
+    border: 2px solid #c7d1da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+}
