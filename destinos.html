@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los mejores destinos en Europa con EliteTravel. Explora paquetes de viaje por la costa mediterránea, Alpes y más. Viajes personalizados y accesibles.">
+    <meta name="keywords" content="viajes Europa, paquetes turísticos, costa Amalfi, viajes Italia, agencia de viajes EliteTravel">
+    <meta name="author" content="EliteTravel">
+    <meta name="robots" content="index, follow">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
@@ -25,37 +29,174 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
     <!-- MATERIAL SYMBOLS -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 
-    <!-- TITULO -->
-    <title>EliteTravel | Destinos</title>
+    <!-- TÍTULO -->
+    <title>EliteTravel | Destinos en Europa - Paquetes de Viaje</title>
 </head>
 <body>
     <header class="header-destinos">
         <div class="logo">
-            <img src="/assets/favicon.ico" alt="Logo de EliteTravel" width="100px">
+            <img src="/assets/favicon.ico" alt="Logo de EliteTravel, agencia de viajes premium" width="100" height="100">
             <h1>EliteTravel</h1>
         </div>
         <nav aria-label="Menú principal">
             <ul>
-                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="destinos.html" aria-current="page">Destinos</a></li>
                 <li><a href="#">Paquetes</a></li>
                 <li><a href="#">Cruceros</a></li>
             </ul>
         </nav>
         <div class="input-container">
             <label for="search" class="sr-only">Buscar Destinos</label>
-            <span class="material-symbols-outlined icon-search">search</span>
-            <input type="search" name="search" id="search" aria-label="Buscar destinos" placeholder="Buscar Destinos...">
+            <span class="material-symbols-outlined icon-search" aria-hidden="true">search</span>
+            <input type="search" name="search" id="search" aria-label="Buscar destinos" placeholder="Buscar Destinos..." autocomplete="off">
         </div>
         <button type="button" aria-label="Cerrar Sesión" class="btn-primary">Cerrar Sesión</button>
-        <div class="foto de perfil"></div>
+        <div class="foto-perfil" aria-label="Foto de perfil del usuario">
+            <!-- Aquí puedes añadir una imagen o avatar -->
+        </div>
     </header>
     <main>
-        <!-- ACA IRA COMO UN SEGUIMIENTO DE LAS PAGINAS ESE PARA SABER EN QUE SECCION NOS ENCONTRASMOS -->
-        <section id="tiltes"></section>
-        <section id="aside"></section>
-        <section id="cards"></section>
+        <nav aria-label="Breadcrumb">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li aria-current="page">Destinos</li>
+            </ol>
+        </nav>
+
+        <section id="titles" aria-labelledby="section-title">
+            <h2 id="section-title">Explorar Europa</h2>
+            <p>Descubra los mejores paquetes de viaje por todo el continente europeo, desde la costa mediterránea hasta las alturas alpinas.</p>
+            <div>
+                <button aria-label="Ver mapa de destinos en Europa">
+                    <span class="material-symbols-outlined text-lg" aria-hidden="true">map</span>
+                    View Map
+                </button>
+                <label for="sort-select" class="sr-only">Ordenar resultados</label>
+                <select id="sort-select" name="sort" aria-label="Ordenar por">
+                    <option value="destacados">Ordenar por: Destacados</option>
+                    <option value="precio-mayor-menor">Precio: Mayor a Menor</option>
+                    <option value="calificacion">Mejor Calificado</option>
+                    <option value="duracion">Duración</option>
+                    <option value="precio-menor-mayor">Precio: Menor a Mayor</option>
+                </select>
+            </div>
+        </section>
+        <aside id="aside" aria-labelledby="aside-title">
+            <h3 id="aside-title">Refina Tu Búsqueda</h3>
+            <p>Encuentra tu escapada perfecta</p>
+            <form aria-label="Formulario de filtros de búsqueda">
+                <section id="section-price">
+                    <label for="price-range"><span class="material-symbols-outlined" aria-hidden="true">payments</span>Rango de Precio</label>
+                    <input type="range" name="price-range" id="price-range" min="0" max="10000" step="100" aria-describedby="price-help">
+                    <span id="price-help" class="sr-only">Ajusta el rango de precio para filtrar paquetes de viaje.</span>
+                </section>
+                <section id="section-activity">
+                    <fieldset>
+                        <legend><span class="material-symbols-outlined" aria-hidden="true">hiking</span>Tipo de Actividad</legend>
+                        <div>
+                            <input type="checkbox" name="activity" id="adventure" value="adventure">
+                            <label for="adventure">Aventura y Caminata</label>
+                            <input type="checkbox" name="activity" id="relaxation" value="relaxation">
+                            <label for="relaxation">Relajación y Bienestar</label>
+                            <input type="checkbox" name="activity" id="historical" value="historical">
+                            <label for="historical">Histórico y Cultural</label>
+                            <input type="checkbox" name="activity" id="gastronomic" value="gastronomic">
+                            <label for="gastronomic">Gastronómica</label>
+                        </div>
+                    </fieldset>
+                </section>
+                <section id="section-climate">
+                    <h4><span class="material-symbols-outlined text-primary" aria-hidden="true">sunny</span>Clima Preferido</h4>
+                    <div role="group" aria-label="Seleccionar clima preferido">
+                        <button type="button" aria-pressed="false">Soleado</button>
+                        <button type="button" aria-pressed="false">Moderado</button>
+                        <button type="button" aria-pressed="false">Frío</button>
+                    </div>
+                </section>
+                <section>
+                    <label for="duration-select"><span class="material-symbols-outlined text-primary" aria-hidden="true">schedule</span>Duración</label>
+                    <select name="duration" id="duration-select" aria-label="Seleccionar duración del viaje">
+                        <option value="any">Cualquier Duración</option>
+                        <option value="1-5">1-5 Días</option>
+                        <option value="1-week">1 Semana</option>
+                        <option value="10-14" selected>10-14 Días</option>
+                        <option value="2-plus">2+ Semanas</option>
+                    </select>
+                </section>
+                <button type="reset" aria-label="Resetear todos los filtros">Resetear Filtros</button>
+            </form>
+        </aside>
+        <section id="cards" aria-labelledby="cards-title">
+            <h2 id="cards-title" class="sr-only">Resultados de Destinos</h2>
+            <div class="grid-cards">
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDElI5WTvTRpGd6XK9NTfg8tf9RVegPxW5PCgof6GHrmE8LE1m_YL66t1F8fJ5Sf24AeXzOVnZeYKbkAOV-wWfG6DhDM49VjGxQjgXllP0lOAoyJfI9lVtNwjWNTHIfDaTt-qhdzVDVO58A_50e8DHY1itAoQnhVcCjkaCo5FcvI8xtKtqJHTFr6hAZ4vOnamZzD49qdUVufUN5CSzbkMQw5AenseP1FdzcWTbEc0lblW9eHzUjScNoO2DoN96bInPV3TZV2Be04g" alt="Vista panorámica de la costa de Amalfi, Italia, con acantilados y mar Mediterráneo">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <h3>Maravillas de la Costa de Amalfi</h3>
+                            <span>Mejor Valorado</span>
+                        </div>
+                        <div class="card-rating">
+                            <span class="material-symbols-outlined" aria-hidden="true">star</span>
+                            <span class="material-symbols-outlined" aria-hidden="true">star</span>
+                            <span class="material-symbols-outlined" aria-hidden="true">star</span>
+                            <span class="material-symbols-outlined" aria-hidden="true">star</span>
+                            <span class="material-symbols-outlined" aria-hidden="true">star_half</span>
+                            <span>4.8</span>
+                            <span>(124 reseñas)</span>
+                        </div>
+                        <p>Experimenta la impresionante belleza de la costa sur de Italia. Incluye visitas a Nápoles, Sorrento y Amalfi, con alojamiento en hoteles boutique y actividades culturales.</p>
+                        <div class="card-location">
+                            <div>
+                                <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                                <p>Nápoles, Sorrento, Amalfi</p>
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>
+                                <p>10 Días / 9 Noches</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card-price">
+                            <div>
+                                <span>Desde</span>
+                                <span>$2,499</span>
+                            </div>
+                            <button aria-label="Ver más detalles del paquete Maravillas de la Costa de Amalfi">Más Detalles</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- Aquí puedes añadir más tarjetas de destinos -->
+            </div>
+            <!-- Paginación -->
+            <nav aria-label="Paginación de resultados">
+                <ul>
+                    <li><a href="?page=1" aria-label="Ir a la página 1">1</a></li>
+                    <li><a href="?page=2" aria-label="Ir a la página 2">2</a></li>
+                    <!-- Añade más páginas según sea necesario -->
+                </ul>
+            </nav>
+        </section>
     </main>
+    <footer>
+        <div class="info-footer">
+            <div>
+                <img src="/assets/favicon.ico" alt="Logo de EliteTravel, agencia de viajes premium" width="80" height="80">
+                <h3>EliteTravel</h3>
+            </div>
+            <div>
+                <div class="links-footer">
+                    <a href="privacidad.html">Política de Privacidad</a>
+                    <a href="servicio.html">Términos de Servicio</a>
+                    <a href="cookies.html">Configuración de Cookies</a>
+                </div>
+                <p>&copy; 2024 EliteTravel Inc. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
