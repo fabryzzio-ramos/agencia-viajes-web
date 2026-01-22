@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/sections/titles.css">
 
     <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
 
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -71,12 +72,12 @@
             <h2 id="section-title">Explorar Europa</h2>
             <p>Descubra los mejores paquetes de viaje por todo el continente europeo, desde <br>la costa mediterránea hasta las alturas alpinas.</p>
             <div>
-                <button aria-label="Ver mapa de destinos en Europa">
+                <button class="btn-titles" aria-label="Ver mapa de destinos en Europa">
                     <span class="material-symbols-outlined" aria-hidden="true">map</span>
-                    View Map
+                    Ver Mapa
                 </button>
                 <label for="sort-select" class="sr-only">Ordenar resultados</label>
-                <select id="sort-select" name="sort" aria-label="Ordenar por">
+                <select id="sort-select" name="sort" aria-label="Ordenar por" class="options-titles">
                     <option value="destacados">Ordenar por: Destacados</option>
                     <option value="precio-mayor-menor">Precio: Mayor a Menor</option>
                     <option value="calificacion">Mejor Calificado</option>
@@ -140,14 +141,14 @@
                     <div class="card-info">
                         <div class="card-title">
                             <h3>Maravillas de la Costa de Amalfi</h3>
-                            <span>Mejor Valorado</span>
+                            <span class="mejor-valorado">Mejor Valorado</span>
                         </div>
                         <div class="card-rating">
-                            <span class="material-symbols-outlined" aria-hidden="true">star</span>
-                            <span class="material-symbols-outlined" aria-hidden="true">star</span>
-                            <span class="material-symbols-outlined" aria-hidden="true">star</span>
-                            <span class="material-symbols-outlined" aria-hidden="true">star</span>
-                            <span class="material-symbols-outlined" aria-hidden="true">star_half</span>
+                            <span class="material-symbols-outlined star" aria-hidden="true">star</span>
+                            <span class="material-symbols-outlined star" aria-hidden="true">star</span>
+                            <span class="material-symbols-outlined star" aria-hidden="true">star</span>
+                            <span class="material-symbols-outlined star" aria-hidden="true">star</span>
+                            <span class="material-symbols-outlined star" aria-hidden="true">star_half</span>
                             <span>4.8</span>
                             <span>(124 reseñas)</span>
                         </div>

@@ -16,17 +16,3 @@ main {
     align-items: center;
     gap: 20px;
 }
-#titles > div button {
-    border: 2px solid #c7d1da;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    color: black;
-    font-size: 1em;
-    font-weight: bold;
-    letter-spacing: 0.06em;
-}

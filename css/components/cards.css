@@ -182,3 +182,140 @@
 .card-offers .info-oferta a .texto:hover{
     text-decoration: underline;
 }
+
+/* CARDS DESTINOS */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+.card:hover {
+    transform: scale(1.02);
+    transform-origin: center;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.4);
+}
+.card .card-img {
+    position: relative;
+    flex: 0 0 400px;
+    height: 400px;
+}
+.card .card-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .card-info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 30px;
+}
+.card .card-info .card-title{
+    display: flex;
+    justify-content: space-between;
+}
+.card .card-info .card-title h3{
+    font-size: 2em;
+    font-weight: bold;
+}
+.card .card-info .card-title span{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+.mejor-valorado{
+    color: #2B8E50;
+    background-color: #DCFCE7;
+}
+.card-rating {
+    display: flex;
+    align-items: center;
+}
+.star{
+    font-variation-settings: 'FILL' 1;
+    color: #FACC15;
+}
+.card-rating > :not(.star):nth-child(6) {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0 10px;
+}
+.card-rating > :not(.star):nth-child(7) {
+    color: #4F759B;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+.card-info > p{
+    color: #4F759B;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+}
+.card-location {
+    display: flex;
+    gap: 15px;
+}
+.card-location div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.1em;
+}
+.card-location div span {
+    font-variation-settings: 'FILL' 1;
+    color: #2B8CEE;
+}
+.card-info hr{
+    margin: 10px 0;
+}
+.card-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card-price > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.card-price > div span:first-child{
+    color: #4F759B;
+    font-size: 1.1em;
+}
+.card-price > div span:last-child {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.card-price button{
+    width: 100%;
+    margin: auto;
+    border: none;
+    background-color: #2B8CEE;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.card-price button::after {
+    content: 'arrow_forward';
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.2em;
+    color: inherit; 
+    display: inline-block; 
+    margin-left: 0.5em;
+    vertical-align: middle;
+}
