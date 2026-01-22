@@ -61,7 +61,7 @@
         </div>
     </header>
     <main>
-        <nav aria-label="Breadcrumb">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
             <ol>
                 <li><a href="index.html">Inicio</a></li>
                 <li aria-current="page">Destinos</li>
@@ -101,10 +101,16 @@
                         <div>
                             <input type="checkbox" name="activity" id="adventure" value="adventure">
                             <label for="adventure">Aventura y Caminata</label>
+                        </div>
+                        <div>
                             <input type="checkbox" name="activity" id="relaxation" value="relaxation">
                             <label for="relaxation">Relajación y Bienestar</label>
+                        </div>
+                        <div>
                             <input type="checkbox" name="activity" id="historical" value="historical">
                             <label for="historical">Histórico y Cultural</label>
+                        </div>
+                        <div>
                             <input type="checkbox" name="activity" id="gastronomic" value="gastronomic">
                             <label for="gastronomic">Gastronómica</label>
                         </div>
@@ -113,12 +119,12 @@
                 <section id="section-climate">
                     <h4><span class="material-symbols-outlined text-primary" aria-hidden="true">sunny</span>Clima Preferido</h4>
                     <div role="group" aria-label="Seleccionar clima preferido">
-                        <button type="button" aria-pressed="false">Soleado</button>
+                        <button type="button" aria-pressed="false" class="activo">Soleado</button>
                         <button type="button" aria-pressed="false">Moderado</button>
                         <button type="button" aria-pressed="false">Frío</button>
                     </div>
                 </section>
-                <section>
+                <section id="section-duration">
                     <label for="duration-select"><span class="material-symbols-outlined text-primary" aria-hidden="true">schedule</span>Duración</label>
                     <select name="duration" id="duration-select" aria-label="Seleccionar duración del viaje">
                         <option value="any">Cualquier Duración</option>

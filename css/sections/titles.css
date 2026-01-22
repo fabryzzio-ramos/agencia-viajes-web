@@ -1,5 +1,22 @@
+/* GRID PRINCIPAL */
 main {
-    padding: 0 20px;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+        "breadcrumb breadcrumb"
+        "titles titles"
+        "aside card"
+        "footer footer";
+    gap: 40px;
+    margin: 0 auto;
+}
+
+/* TITLES */
+#titles {
+    grid-area: titles;
+    margin-bottom: 40px;
+    padding: 0 0 20px 0;
 }
 #section-title {
     font-size: 3rem;
@@ -9,10 +26,230 @@ main {
 #titles p {
     color: #6284A6;
     line-height: 1.5em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 #titles > div {
     display: flex;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.btn-titles {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-titles:hover {
+    background-color: #1a7bc7;
+    color: white;
+}
+.options-titles {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+/* BREADCRUMB */
+.breadcrumb {
+    grid-area: breadcrumb;
+    padding: 15px 0 0 0;
+}
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+    font-size: 1em; 
+    font-weight: 500; 
+}
+.breadcrumb li:not(:last-child)::after {
+    content: '>';
+    margin-left: 8px;
+    color: #6c757d; 
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.breadcrumb a {
+    color: #2B8CEE;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.breadcrumb a:hover {
+    background-color: #e9f3fd;
+    color: #1a7bc7;
+    text-decoration: none; 
+}
+.breadcrumb li[aria-current="page"] a {
+    color: #495057; 
+    font-weight: 600; 
+    cursor: default; 
+}
+.breadcrumb li:first-child a::before {
+    content: 'home';
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.1em;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* ASIDE */
+#aside {
+    background-color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#aside-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+#aside p {
+    color: #4F759B;
+    font-size: 1em;
+    margin-top: 5px;
+}
+#aside form {
+    margin-top: 30px;
+}
+#section-price {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#aside form label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+#aside form span {
+    color: #2B8CEE;
+    font-variation-settings: 'FILL' 1;
+}
+#section-price label {
+    font-size: 1em;
+}
+#section-activity legend {
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#section-activity legend span {
+    margin-right: 10px;
+}
+#section-activity fieldset {
+    border: none;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+#section-activity fieldset > div {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 10px;
+}
+#section-activity fieldset > div input {
+    width: 20px;
+    margin-right: 10px;
+    border: 1px solid #839EB9;
+    accent-color: #2B8CEE;
+}
+#section-activity fieldset > div label {
+    color: #4F759B;
+    font-size: 1em;
+}
+#section-climate {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0 40px;
+}
+#section-climate h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#section-climate > div {
+    display: flex;
+    gap: 10px;
+}
+#section-climate button {
+    border: none;
+    background-color: #E7EDF3;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #4F759B;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#section-climate button.activo {
+    background-color: #2B8CEE;
+    color: white;
+}
+#section-climate button:hover {
+    background-color: #1a7bc7;
+    color: white;
+}
+#section-duration label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+#section-duration select {
+    margin: 20px 0 40px;
+    width: 100%;
+    background-color: #E7EDF3;
+    border: none;
+    font-size: 1.1em;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#aside form button[type="reset"] {
+    width: 100%;
+    border-radius: 10px;
+    color: #2B8CEE;
+    background-color: #E9F3FD;
+    padding: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#aside form button[type="reset"]:hover {
+    background-color: #1a7bc7;
+    color: white;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: card;
     gap: 20px;
 }
