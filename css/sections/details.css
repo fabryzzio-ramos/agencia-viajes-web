@@ -1,0 +1,397 @@
+/* GRID */
+main {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "breadcrumb breadcrumb"
+        "titles titles"
+        "photos photos"
+        "principal aside"
+        "similitud similitud"
+        "footer footer";
+    gap: 40px;
+    margin: 0 auto;
+}
+.breadcrumb {
+    grid-area: breadcrumb;
+}
+#titles{
+    grid-area: titles;
+}
+#section-photos {
+    grid-area: photos;
+}
+#section-principal{
+    grid-area: principal;
+}
+aside{
+    grid-area: aside;
+}
+#section-similitudes{
+    grid-area: similitud;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+    padding: 15px 0 0 0;
+}
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+    font-size: 1em; 
+    font-weight: 500; 
+}
+.breadcrumb li:not(:last-child)::after {
+    content: '>';
+    margin-left: 8px;
+    color: #6c757d; 
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.breadcrumb a {
+    color: #2B8CEE;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.breadcrumb a:hover {
+    background-color: #e9f3fd;
+    color: #1a7bc7;
+    text-decoration: none; 
+}
+.breadcrumb li[aria-current="page"] a {
+    color: #495057; 
+    font-weight: 600; 
+    cursor: default; 
+}
+.breadcrumb li:first-child a::before {
+    content: 'home';
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.1em;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* TITLES */
+#titles h2{
+    font-size: 3em;
+}
+#titles > div {
+    display: flex;
+    justify-content: space-between;
+}
+#titles > div > div {
+    display: flex;
+    gap: 20px;
+}
+#titles > div > div span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-variation-settings: 'FILL' 1;
+    color: #536073;
+}
+#titles > div > div span.icon{
+    color: var(--primary);
+}
+#titles > div > div > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #FEF9C3;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+#titles > div > div > div span {
+    color: #A16207;
+}
+#titles > div > div > div span.oscuro {
+    color: #A16207;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#titles div:nth-child(2) button {
+    background-color: var(--background-light);
+    border: 1px solid #9BA2A8;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-variation-settings: 'FILL' 1;
+}
+#titles div:nth-child(2) button span {
+    color: black;
+}
+
+/* PHOTOS */
+#section-photos .grid-photos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    grid-template-areas: 
+        "img-1 img-1 img-2 img-3"
+        "img-1 img-1 img-4 img-4";
+    gap: 20px;
+    overflow: hidden;
+    max-height: 500px;
+}
+#section-photos .grid-photos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#section-photos .grid-photos div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.img-1 {
+    grid-area: img-1;
+}
+.img-2 {
+    grid-area: img-2;
+}
+.img-3 {
+    grid-area: img-3;
+}
+.img-4 {
+    grid-area: img-4;
+}
+
+/* NAV PRINCIPAL */
+hr {
+    margin: 20px 0 40px;
+}
+#section-info a{
+    color: #536073;
+    padding-bottom: 20px;
+    font-size: 1.1em;
+    text-transform: none;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+#section-info a:hover{
+    color: #2C8CEE;
+    border-bottom: 3px solid #2C8CEE;
+}
+
+/* INFO */
+#section-info {
+    margin-bottom: 50px;
+}
+#section-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+#section-info p{
+    color: #536073;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+#section-info > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#section-info > div > article{
+    background-color: white;
+    border: 1px solid #dadfe4;
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+#section-info > div > article h3{ 
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    gap: 5px;
+    font-variation-settings: 'FILL' 1;
+    margin-bottom: 20px;
+}
+#section-info > div > article h3 span {
+    color: #2C8CEE;
+}
+#section-info > div ol {
+    counter-reset: custom-counter;
+    list-style-position: inside;
+    list-style: none;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+#section-info > div li {
+    counter-increment: custom-counter; 
+    color: #536073; 
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+}
+#section-info > div li::before {
+    content: counter(custom-counter, decimal-leading-zero);
+    font-weight: bold;
+    color: #2C8CEE; 
+}
+
+/* ITINERARIO */
+#section-itinerario {
+    margin-bottom: 100px;
+}
+#section-itinerario h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+#section-itinerario .timeline {
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+}
+#section-itinerario .timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #E3E8F0;
+}
+#section-itinerario .timeline-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+#section-itinerario .timeline-dot {
+    width: 40px;
+    height: 40px;
+    background-color: #2B8CEE;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 1;
+}
+#section-itinerario .timeline-content h3{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+#section-itinerario .timeline-content p{
+    color: #536073;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+#section-itinerario .timeline-content span{
+    font-size: 1em;
+    color: #2B8CEE;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* INCLUYE */
+#section-incluyed{
+    margin-bottom: 80px;
+}
+#section-incluyed h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+#section-incluyed > div {
+    display: flex;
+    justify-content: space-between;
+}
+#section-incluyed > div div h3{
+    font-variation-settings: 'FILL' 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+#section-incluyed > div div h3 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5px;
+}
+#section-incluyed > div div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#section-incluyed > div div li {
+    font-size: 1em;
+    color: #536073;
+}
+#section-incluyed > div div:nth-child(1) h3 span {
+    color: white;
+    background-color: #2B8CEE;
+    font-size: 0.5em;
+}
+#section-incluyed > div div:nth-child(2) h3 span {
+    color: white;
+    background-color: #EF4444;
+    font-size: 0.6em;
+}
+#section-incluyed > div div:nth-child(1) h3 {
+    color: #2B8CEE;
+}
+#section-incluyed > div div:nth-child(2) h3 {
+    color: #EF4444;
+}
+#section-incluyed > div div:nth-child(1) ul {
+    list-style: none;
+    padding: 0;
+}
+#section-incluyed > div div:nth-child(1) li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+#section-incluyed > div div:nth-child(1) li::before {
+    content: "check";
+    font-family: "Material Symbols Outlined";
+    font-size: 1.2em;
+    color: green; 
+    display: inline-block;
+    margin-right: 5px;
+}
+#section-incluyed > div div:nth-child(2) ul {
+    list-style: none;
+    padding: 0;
+}
+#section-incluyed > div div:nth-child(2) li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+#section-incluyed > div div:nth-child(2) li::before {
+    content: "close";
+    font-family: "Material Symbols Outlined";
+    font-size: 1.2em;
+    color: #EF4444; 
+    display: inline-block;
+    margin-right: 5px;
+}
