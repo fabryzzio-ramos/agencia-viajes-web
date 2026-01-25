@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre los mejores destinos en Europa con EliteTravel. Explora paquetes de viaje por la costa mediterránea, Alpes y más. Viajes personalizados y accesibles.">
-    <meta name="keywords" content="viajes Europa, paquetes turísticos, costa Amalfi, viajes Italia, agencia de viajes EliteTravel">
+    <meta name="description" content="Descubre el paquete 'Explorador de Glaciares y Alpes Suizos' con EliteTravel. Viaje de 10 días por Zúrich, Lucerna, Interlaken y Jungfraujoch, con trenes panorámicos, glaciares y experiencias exclusivas. Precio desde $3,499 por persona.">
+    <meta name="keywords" content="viajes Suiza, paquete Alpes Suizos, glaciares Suiza, Jungfraujoch, Zúrich, Lucerna, EliteTravel, viajes Europa, turismo alpino">
     <meta name="author" content="EliteTravel">
     <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Explorador de Glaciares y Alpes Suizos | EliteTravel">
+    <meta property="og:description" content="Viaje de 10 días por los Alpes Suizos con trenes panorámicos y vistas inolvidables. Desde $3,499 por persona.">
+    <meta property="og:image" content="https://www.civitatis.com/blog/wp-content/uploads/2024/04/montana-zermatt-suiza.jpg">
+    <meta property="og:url" content="https://www.elitetravel.com/detalles-paquete-suiza">
+    <meta property="og:type" content="website">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
@@ -34,10 +40,12 @@
     <!-- MATERIAL SYMBOLS -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 
-    <!-- TÍTULO -->
-    <title>EliteTravel | Detalles del Paquete</title>
+    <!-- TÍTULO Mejorado para SEO -->
+    <title>Explorador de Glaciares y Alpes Suizos | EliteTravel</title>
 </head>
 <body>
+    <a href="#main-content" class="skip-link sr-only">Saltar al contenido principal</a>
+
     <header class="header-destinos">
         <div class="logo">
             <img src="/assets/favicon.ico" alt="Logo de EliteTravel, agencia de viajes premium" width="100" height="100">
@@ -46,8 +54,8 @@
         <nav aria-label="Menú principal">
             <ul>
                 <li><a href="destinos.html" aria-current="page">Destinos</a></li>
-                <li><a href="#">Paquetes</a></li>
-                <li><a href="#">Cruceros</a></li>
+                <li><a href="paquetes.html">Paquetes</a></li> 
+                <li><a href="cruceros.html">Cruceros</a></li>
             </ul>
         </nav>
         <div class="input-container">
@@ -56,11 +64,12 @@
             <input type="search" name="search" id="search" aria-label="Buscar destinos" placeholder="Buscar Destinos..." autocomplete="off">
         </div>
         <button type="button" aria-label="Cerrar Sesión" class="btn-primary">Cerrar Sesión</button>
-        <div class="foto-perfil" aria-label="Foto de perfil del usuario">
+        <div class="foto-perfil" aria-label="Foto de perfil del usuario" role="img">
             <!-- Aquí puedes añadir una imagen o avatar -->
         </div>
     </header>
-    <main>
+
+    <main id="main-content">
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <ol>
                 <li><a href="index.html">Inicio</a></li>
@@ -68,105 +77,142 @@
                 <li aria-current="page">Detalles</li>
             </ol>
         </nav>
+
+        <aside aria-label="Información del paquete y reserva">
+            <section>
+                <h3>A partir de</h3>
+                <p>
+                    <span>$3,499</span>
+                    <span>por persona</span>
+                </p>
+            </section>
+            <section>
+                <form action="#" method="post" aria-labelledby="form-title"> 
+                    <h4 id="form-title" class="sr-only">Formulario de consulta de disponibilidad</h4>
+                    <div>
+                        <label for="date">Selecciona fecha de salida</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div>
+                        <label for="number">Viajeros</label>
+                        <input type="number" name="number" id="number" min="1" max="10" required>
+                    </div>
+                    <button type="submit">Consultar Disponibilidad</button>
+                </form>
+            </section>
+            <hr>
+            <section>
+                <form action="#" method="post" aria-labelledby="budget-title">
+                    <fieldset>
+                        <legend id="budget-title">Solicitar Presupuesto</legend>
+                        <label for="name" class="sr-only">Nombre</label> 
+                        <input type="text" id="name" name="name" placeholder="Nombre" required>
+                        <label for="email" class="sr-only">Correo Electrónico</label> 
+                        <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                    </fieldset>
+                    <button type="submit">Solicitar Folleto</button>
+                </form>
+            </section>
+        </aside>
+
         <section id="titles" aria-labelledby="section-title">
-            <h2>Explorador de Glaciares y Alpes Suizos</h2>
+            <h2 id="section-title">Explorador de Glaciares y Alpes Suizos</h2> 
             <div>
                 <div>
-                    <span><span class="material-symbols-outlined icon">schedule</span>10 Dias</span>
-                    <span><span class="material-symbols-outlined icon">location_on</span>Suiza</span>
+                    <span><span class="material-symbols-outlined icon" aria-hidden="true">schedule</span>10 Días</span>
+                    <span><span class="material-symbols-outlined icon" aria-hidden="true">location_on</span>Suiza</span>
                     <div>
-                        <span class="material-symbols-outlined oscuro">star</span>
+                        <span class="material-symbols-outlined oscuro" aria-hidden="true">star</span>
                         <span class="oscuro">4.9</span>
                         <span>(128 Opiniones)</span>
                     </div>
                 </div>
                 <div>
-                    <button><span class="material-symbols-outlined">
-share
-</span>Compartir</button>
-                    <button><span class="material-symbols-outlined">
-favorite
-</span>Guardar</button>
+                    <button type="button" aria-label="Compartir paquete"><span class="material-symbols-outlined" aria-hidden="true">share</span>Compartir</button>
+                    <button type="button" aria-label="Guardar paquete"><span class="material-symbols-outlined" aria-hidden="true">favorite</span>Guardar</button>
                 </div>
             </div>
         </section>
-        <section id="section-photos">
+
+        <section id="section-photos" aria-labelledby="photos-title">
+            <h3 id="photos-title" class="sr-only">Galería de fotos del paquete</h3> 
             <div class="grid-photos">
                 <div class="img-1">
-                    <img src="https://www.civitatis.com/blog/wp-content/uploads/2024/04/montana-zermatt-suiza.jpg" alt="">
+                    <img src="https://www.civitatis.com/blog/wp-content/uploads/2024/04/montana-zermatt-suiza.jpg" alt="Vista panorámica de las montañas de Zermatt en Suiza, con nieve y picos alpinos" loading="lazy">
                 </div>
                 <div class="img-2">
-                    <img src="https://plus.unsplash.com/premium_photo-1690099567559-706ce29ef4de?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9udGElQzMlQjFhcyUyMGRlJTIwc3VpemF8ZW58MHx8MHx8fDA%3D" alt="">
+                    <img src="https://plus.unsplash.com/premium_photo-1690099567559-706ce29ef4de?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9udGElQzMlQjFhcyUyMGRlJTIwc3VpemF8ZW58MHx8MHx8fDA%3D" alt="Montañas nevadas en los Alpes Suizos con un lago cristalino en primer plano" loading="lazy">
                 </div>
                 <div class="img-3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa284zKD6Lim8j2PefU01wAEQlXOokMOssyQ&s" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa284zKD6Lim8j2PefU01wAEQlXOokMOssyQ&s" alt="Glaciar Aletsch en los Alpes Suizos, el más grande de Europa" loading="lazy">
                 </div>
                 <div class="img-4">
-                    <img src="https://content-viajes.nationalgeographic.com.es/medio/2025/11/03/shutterstock_879e339d_2393185093_251103163050_1280x720.webp" alt="">
+                    <img src="https://content-viajes.nationalgeographic.com.es/medio/2025/11/03/shutterstock_879e339d_2393185093_251103163050_1280x720.webp" alt="Pueblo alpino en Suiza con casas tradicionales y montañas" loading="lazy">
                 </div>
             </div>
         </section>
+
         <section id="section-principal">
             <section id="section-info">
-                <nav>
+                <nav aria-label="Navegación del contenido del paquete">
                     <ul>
-                        <li><a href="#section-info">Descripcion General</a></li>
+                        <li><a href="#section-info">Descripción General</a></li>
                         <li><a href="#section-itinerario">Itinerario</a></li>
-                        <li><a href="#section-incluyed">Que Incluye</a></li>
-                        <li><a href="">Opiniones</a></li>
+                        <li><a href="#section-incluyed">Qué Incluye</a></li>
+                        <li><a href="opiniones.html">Opiniones</a></li>
                     </ul>
                 </nav>
                 <hr>
-                <h2>Resumen Del Viaje</h2>
-                <p>Experimenta la mejor aventura alpina en el corazón de Suiza. Desde el encanto cosmopolita de Zùrich hasta las majestuosas alturas de Jungfraujoch, este viaje de 10 dìas lo llevará a través de paisajes iconicos, lagos de aguas cristalinas y pueblos historicos de montaña. Viajara en trenes panoramicos de clase mundial, se deleitara con autentico chocolate y queso suizos y sera testigo de la impresionante belleza del glaciar Aletsch</p>
+                <h2>Resumen del Viaje</h2>
+                <p>Experimenta la mejor aventura alpina en el corazón de Suiza. Desde el encanto cosmopolita de Zúrich hasta las majestuosas alturas de Jungfraujoch, este viaje de 10 días lo llevará a través de paisajes icónicos, lagos de aguas cristalinas y pueblos históricos de montaña. Viajará en trenes panorámicos de clase mundial, se deleitará con auténtico chocolate y queso suizos y será testigo de la impresionante belleza del glaciar Aletsch.</p> <!-- Corregido: Errores tipográficos y ortográficos -->
                 <div>
                     <article>
-                        <h3><span class="material-symbols-outlined">verified</span>Experiencia Destacada</h3>
+                        <h3><span class="material-symbols-outlined" aria-hidden="true">verified</span>Experiencia Destacada</h3>
                         <ol>
                             <li>Taller privado de cata de chocolate en Lucerna</li>
                             <li>Pasaje de primera clase en el Glaciar Express</li>
                             <li>Cena al atardecer en la cima del Monte Pilatus</li>
                         </ol>
                     </article>
-                    <article>
-                        <!-- ACA IRA EL MAPA -->
+                    <article aria-label="Mapa del itinerario en Suiza"> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999!2d8.541694!3d46.818188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f2b8b1f8b8b8b%3A0x478f2b8b1f8b8b8b!2sJungfraujoch!5e0!3m2!1ses!2sus!4v1234567890123!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa del itinerario en los Alpes Suizos"></iframe>
                     </article>
                 </div>
             </section>
+
             <section id="section-itinerario">
                 <h2>Detalles de Itinerario</h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-dot">1</div>
                         <article class="timeline-content">
-                            <h3>Llegada a Zùrich</h3>
-                            <p>¡Bienvenido a Suiza! Reúnase con guía y compañeros de viaje para una cena de bienvenida junto al lago de Zùrich. Instálese en su hotel boutique en el corazón del casco antiguo.</p>
+                            <h3>Llegada a Zúrich</h3>
+                            <p>¡Bienvenido a Suiza! Reúnase con guía y compañeros de viaje para una cena de bienvenida junto al lago de Zúrich. Instálese en su hotel boutique en el corazón del casco antiguo.</p>
                         </article>
                     </div>
-
                     <div class="timeline-item">
                         <div class="timeline-dot">2</div>
                         <article class="timeline-content">
                             <h3>Lucerna y lago de los Cuatro Cantones</h3>
-                            <p>Viaje en tren a Lucerna. Cruce el emblemático Puente de la Capilla y tome un crucero privado en barco por el lago mientras el sol se pone tras las montañaas.</p>
+                            <p>Viaje en tren a Lucerna. Cruce el emblemático Puente de la Capilla y tome un crucero privado en barco por el lago mientras el sol se pone tras las montañas.</p>
                         </article>
                     </div>
-
                     <div class="timeline-item">
                         <div class="timeline-dot">3</div>
                         <article class="timeline-content">
                             <h3>Interlaken y Jungfraujoch</h3>
-                            <p>Ascienda a la "Cima de Europa". Un viaje en tren a gran latitud le llevara al Observatorio de la Esfinge a 3454m para disfrutar de vistas panorámicas del glaciar.</p>
-                            <span>Ver 6 días más...</span>
+                            <p>Ascienda a la "Cima de Europa". Un viaje en tren a gran altitud le llevará al Observatorio de la Esfinge a 3454m para disfrutar de vistas panorámicas del glaciar.</p>
+                            <a href="#full-itinerary" aria-expanded="false">Ver 6 días más...</a> 
                         </article>
                     </div>
                 </div>
             </section>
+
             <section id="section-incluyed">
-                <h2>Que Incluye</h2>
+                <h2>Qué Incluye</h2> 
                 <div>
                     <div>
-                        <h3><span class="material-symbols-outlined">check</span>Incluye</h3>
+                        <h3><span class="material-symbols-outlined" aria-hidden="true">check</span>Incluye</h3>
                         <ul>
                             <li>Todo el alojamiento en hoteles boutique de 4 estrellas (9 noches)</li>
                             <li>Desayuno diario y 6 cenas de grupo con vino</li>
@@ -175,39 +221,40 @@ favorite
                         </ul>
                     </div>
                     <div>
-                        <h3><span class="material-symbols-outlined">close</span>No Incluye</h3>
+                        <h3><span class="material-symbols-outlined" aria-hidden="true">close</span>No Incluye</h3>
                         <ul>
-                            <li>Billete de avión internacional desde/hacia Zùrich</li>
+                            <li>Billete de avión internacional desde/hacia Zúrich</li>
                             <li>Seguro de viaje personal (obligatorio)</li>
-                            <li>Propinas discrecionales para guias</li>
+                            <li>Propinas discrecionales para guías</li>
                         </ul>
                     </div>
                 </div>
             </section>
         </section>
+
         <section id="section-similitudes">
             <hr>
             <h2>Aventuras Similares</h2>
             <p>Descubre más destinos europeos impresionantes.</p>
-            <article class="card-similitudes">
-                <div>
-                    <span>12 days</span>
-                    <img src="https://content-viajes.nationalgeographic.com.es/medio/2024/05/23/braies_f74fd907_2400886207_240523154700_1280x853.jpg" alt="">
-                </div>
-                <div>
-                    <span><span class="material-symbols-outlined">
-star
-</span>4.8</span>
-                    <h3>Expedición de senderismo por las Dolomitas italianas</h3>
-                    <div>
-                        <span>Salida</span>
-                        <span>$2,850</span>
+            <div class="grid-similitudes">
+                <article class="card-similitudes">
+                    <div class="img">
+                        <span>12 Días</span> 
+                        <img src="https://content-viajes.nationalgeographic.com.es/medio/2024/05/23/braies_f74fd907_2400886207_240523154700_1280x853.jpg" alt="Vista de las Dolomitas italianas con lagos y montañas" loading="lazy">
                     </div>
-                </div>
-            </article>
+                    <div>
+                        <span><span class="material-symbols-outlined" aria-hidden="true">star</span>4.8</span>
+                        <h3>Expedición de senderismo por las Dolomitas italianas</h3>
+                        <div>
+                            <span>Salida</span>
+                            <span>$2,850</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer style="background-color: white; border-top: 2px solid #F1F2F3;">
         <div class="info-footer">
             <div>
                 <img src="/assets/favicon.ico" alt="Logo de EliteTravel, agencia de viajes premium" width="80" height="80">

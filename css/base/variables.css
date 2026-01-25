@@ -4,4 +4,11 @@
     --background-light: #f6f7f8;
     --background-dark: #101922;
     --navy-deep: #0d141b;
+
+    --secondary: #EF4444;
+    --text-color: #536073;
+    --border-color: #F0F4F8;
+    --border-radius: 10px;
+    --shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.1);
+    --transition: all 0.1s ;
 }
