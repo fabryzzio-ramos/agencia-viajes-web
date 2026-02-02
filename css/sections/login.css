@@ -1,0 +1,35 @@
+.container {
+    max-width: 500px ;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+    padding: 30px 40px;
+}
+.container h1 {
+    font-weight: bold;
+    font-size: 2.3em;
+    margin-bottom: 30px;
+}
+.form-group input {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #d1d5d8;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.btn {
+    width: 100%;
+    font-size: 17px;
+    border-radius: 40px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+p a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
+}

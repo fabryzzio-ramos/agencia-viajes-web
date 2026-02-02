@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | EliteTravel</title>
+    
+    <meta name="description" content="Inicia sesión en tu cuenta para acceder a nuestros servicios. Página segura y accesible.">
+    <meta name="keywords" content="iniciar sesión, login, cuenta, autenticación, sitio web">
+    <meta name="author" content="EliteTravel">
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!-- MATERIAL SYMBOLS -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/base.css">
+
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+
+    <link rel="stylesheet" href="css/components/buttons.css">
+
+    <link rel="stylesheet" href="css/sections/login.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <a href="#main-content" class="sr-only">Saltar al contenido principal</a>
+    
+    <header>
+        <div class="logo">
+            <img src="/assets/favicon.ico" alt="Logo de EliteTravel" width="100px">
+            <h1>EliteTravel</h1>
+        </div>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="#section-about">Paquetes</a></li>
+                <li><a href="#section-offers">Cruceros</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="btn-login" aria-label="Iniciar Sesión" class="btn-primary">Iniciar Sesión</button>
+    </header>
+    
+    <main id="main-content" role="main" class="container">
+        <h1>Iniciar Sesión</h1>
+        <div id="message" role="alert" aria-live="assertive" style="display: none;"></div>
+        <form class="login-form">
+            <div class="form-group">
+                <label for="emailLogin" class="sr-only">Correo electrónico</label>
+                <input type="email" id="emailLogin" name="email" placeholder="Ingresa tu correo electrónico" required autocomplete="email">
+            </div>
+            
+            <div class="form-group">
+                <label for="passwordLogin" class="sr-only">Contraseña</label>
+                <input type="password" id="passwordLogin" name="password" placeholder="Ingresa tu contraseña" required autocomplete="current-password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" aria-describedby="submit-description">Iniciar Sesión</button>
+            <span id="submit-description" class="sr-only">Envía el formulario para iniciar sesión</span>
+        </form>
+        
+        <p>¿No tienes cuenta? <a href="register.html" id="register-link">Regístrate aquí</a></p>
+    </main>
+    
+    <footer>
+        <div class="info-footer">
+            <div>
+                <img src="/assets/favicon.ico" alt="Logo de EliteTravel, agencia de viajes premium" width="80" height="80">
+                <h3>EliteTravel</h3>
+            </div>
+            <div>
+                <div class="links-footer">
+                    <a href="privacidad.html">Política de Privacidad</a>
+                    <a href="servicio.html">Términos de Servicio</a>
+                    <a href="cookies.html">Configuración de Cookies</a>
+                </div>
+                <p>&copy; 2024 EliteTravel Inc. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/modules/auth.js" defer></script>
+</body>
+</html>
